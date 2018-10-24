@@ -1,0 +1,1 @@
+db.member.insert({"_mstt":"DH004","_memberName":"Nguyen Thai Ninh", "_unitPosition":"UV BCH Hội Sinh viên tỉnh Thái Nguyên, UV BTV Tỉnh đoàn, Chuyên viên Ban Tuyên Giáo Tỉnh đoàn", "_personalImage":"/imgs/DH004.jpg","_present":false})

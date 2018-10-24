@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%=title%> - Đại hội Đại biểu Hội sinh viên tỉnh Thái Nguyên lần thứ III, nhiệm kỳ 2018 - 2023</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+            <%if(data){%>
+              <div class="col-sm-6 offset-3 mt-5 member">
+                  <div class="card overall">
+                      <img class="card-img-top" src="<%=data._personalImage%>.jpg" id ="personalImage" alt="Card image cap">
+                      <div class="card-body">
+                        <div id="tt-name">
+                          <div class="title">
+                            <div class="stt">TT:</div>
+                            <div class="name">Tên đại biểu:</div>
+                          </div>
+                          <div class="info">
+                            <div class="info-stt" id="mstt"><%= data._mstt %></div>
+                            <div class="info-name" id="memberName"><%= data._memberName %></div>
+                            <input type="hidden" name="" id="yob" value="<%= data.yob%>">
+                            <input type="hidden" name="" id="gender" value="<%= data.gender%>">
+                            <input type="hidden" name="" id="folk" value="<%= data.folk%>">
+                            <input type="hidden" name="" id="religion" value="<%= data.religion%>">
+                            <input type="hidden" name="" id="qualification" value="<%= data.qualification%>">
+                            <input type="hidden" name="" id="qualificationLLCT" value="<%= data.qualificationLLCT%>">
+                            <input type="hidden" name="" id="partyMember" value="<%= data.partyMember%>">
+                            <input type="hidden" name="" id="groupNo" value="<%= data.groupNo%>">
+
+                          </div>
+                        </div>
+                        <div id="unitPosition">
+                          <span class="title">CHỨC VỤ: </span>
+                          <ul class="card-text" id="memberUnitPosition">
+                          <%data._unitPosition.split(",").map( (item) => {%>
+                            <li> <%= item.trim() %></li>
+                          <%})%>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            <%}else{%>
+              <div class="col-sm-12 text-center">Thành viên đã có mặt!</div>
+            <%}%>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/checkin-socket.js"></script>
+  </body>
+</html>

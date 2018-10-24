@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Đại hội Đại biểu Hội sinh viên tỉnh Thái Nguyên lần thứ III, nhiệm kỳ 2018 - 2023</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="imgs/logo.png">
+    </div>
+    <div class="title">
+      <h1 class="line">Đại hội đại biểu</h1>
+      <h2 class="line">hội sinh viên tỉnh Thái Nguyên lần thứ III</h2>
+      <h2 class="line">nhiệm kỳ 2018 - 2023</h2>
+    </div>
+    <div class="counter">
+      <p>
+        <span id="total">
+          <%= total%></span>/250
+      </p>
+    </div>
+  </div>
+
+  <ul class="cards">
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">Tỉnh đoàn, Thường trực HSV tỉnh, Sở ngành phối hợp</div>
+          <p class="card__text"><span id="_g1">
+              <%= units[0]._presentMember%></span>/<%= units[0]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Công thương</div>
+          <p class="card__text"><span id="_g2">
+              <%= units[1]._presentMember%></span>/<%= units[1]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ VHVT Việt Bắc</div>
+          <p class="card__text"><span id="_g3">
+              <%= units[2]._presentMember%></span>/<%= units[2]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ CNVĐ</div>
+          <p class="card__text"><span id="_g4">
+              <%= units[3]._presentMember%></span>/<%= units[3]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Công nghệ và KTCN</div>
+          <p class="card__text"><span id="_g5">
+              <%= units[4]._presentMember%></span>/<%= units[4]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Công nghiệp</div>
+          <p class="card__text"><span id="_g6">
+              <%= units[5]._presentMember%></span>/<%= units[5]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">ĐH Việt Bắc</div>
+          <p class="card__text"><span id="_g7">
+              <%= units[6]._presentMember%></span>/<%= units[6]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Thương mại Du lịch</div>
+          <p class="card__text"><span id="_g8">
+              <%= units[7]._presentMember%></span>/<%= units[7]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Y tế</div>
+          <p class="card__text"><span id="_g9">
+              <%= units[8]._presentMember%></span>/<%= units[8]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Sư phạm</div>
+          <p class="card__text"><span id="_g10">
+              <%= units[9]._presentMember%></span>/<%= units[9]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">CĐ Kinh tế Tài chính</div>
+          <p class="card__text"><span id="_g11">
+              <%= units[10]._presentMember%></span>/<%= units[10]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+    <li class="cards__item">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">Đại học Thái Nguyên</div>
+          <p class="card__text"><span id="_g12">
+              <%= units[11]._presentMember%></span>/<%= units[11]._totalMember%></p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div id="checkInMember">
+      <div class="container">
+          <h1 class="welcome">CHÀO MỪNG ĐẠI BIỂU</h1>
+          <div class="resume" id="info-member">
+              
+              <div class="left">
+                      
+                      <h3 class="left-title">Đại biểu</h3>
+                  <img src="imgs/DH001.jpg" alt="" id="personalImage" width="240px" height="320px">
+                  <h3 id="name-member">Đoàn Quang Duy</h3>
+              </div>
+  
+              <div class="right">
+                  <h3 class="info-title">Thông tin đại biểu</h3>
+                  <div class="info">
+    
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Năm sinh:</p>
+                                  <p id="yob" class="item-value">1985</p>
+                          </div>
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Giới tính:</p>
+                                  <p id="gender" class="item-value">Nam</p>
+                          </div>
+                          <div class="item-info"></div>
+                              <p class="title"><i class="fas fa-minus"></i>Chức vụ, đơn vị:</p>
+                              <ul id="unitPosition" class="item-value">
+                                  <li><i class="fas fa-plus"></i>UV BTK Trung ương Hội Sinh viên Việt Nam</li>
+                                  <li><i class="fas fa-plus"></i>Phó Bí thư Tỉnh đoàn
+                                  </li>
+                                  <li><i class="fas fa-plus"></i>Phó Chủ tịch Hội LHTN
+                                  </li>
+                                  <li><i class="fas fa-plus"></i>Chủ tịch Hội Sinh viên tỉnh Thái Nguyên
+                                  </li>
+                              </ul>
+                          
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Dân tộc:</p>
+                                  <p id="folk" class="item-value">Kinh</p>
+                          </div>
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Tôn giáo:</p>
+                                  <p id="religion" class="item-value">Không</p>
+                          </div>
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Trình độ:</p>
+                                  <p id="qualification" class="item-value">Tiến sĩ</p>
+                          </div>
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Trình độ LLCT:</p>
+                                  <p id="qualificationLLCT" class="item-value">Cao cấp</p>
+                          </div>
+                          <div class="item-info">
+                                  <p class="title"><i class="fas fa-minus"></i>Đảng/Đoàn:</p>
+                                  <p id="partyMember" class="item-value">Đảng viên</p>
+                          </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/js/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index-socket.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

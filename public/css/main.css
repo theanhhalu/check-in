@@ -1,0 +1,47 @@
+@font-face{
+    font-family: "helv";
+    src: url("helveticaneue.ttf");
+}
+
+*{
+    font-family: "helv";
+}
+#tt-name{
+    display: flex;
+}
+.card-body{
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
+}
+#tt-name .title{
+    margin-right: 0.5rem;
+    flex-grow: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#tt-name .info{
+    flex-grow: 2;
+    text-transform: uppercase;
+    color:#4286f4;
+    font-weight: bold;
+}
+#unitPosition .title{
+    font-weight: 700;
+}
+#unitPosition ul>li{
+    color:#4286f4;
+    font-weight: bold;
+}
+.img-personal{
+    height: 450px;
+}
+.overall{
+    height: 100%;
+    border-color: #FFCC33!important; 
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+
